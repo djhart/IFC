@@ -1,0 +1,10 @@
+* Temperature Compensation
+** TODO Use synoptic API to pull temp data nearest to station (start with Walnut Creek but make scalable)
+*** Use this https://developers.synopticdata.com/mesonet/v2/stations/timeseries/
+*** Write it so it just pulls from station metadata
+** TODO Write correction algorithm
+*** There was one from another sensor company that was just linear. Find this and try it before writing your own.
+** TODO Use org-babel (?) to apply correction to water levels with temps from synoptic.
+*** Make sure that this works before going further. Get the USGS/IFC graph that Witek had for comparison
+** TODO Apply it to all the sensors
+*** Try to do the whole thing automated just from the master list. Will need to make it robust bc some on list will throw error.
