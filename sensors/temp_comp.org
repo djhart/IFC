@@ -1,7 +1,12 @@
 * Temperature Compensation
+** TODO Use curl to get station data
+*** curl "url"
+*** {} for multiples in list
+*** either use one call to pull many files or make many calls, preferably one call
 ** TODO Use synoptic API to pull temp data nearest to station (start with Walnut Creek but make scalable)
 *** Use this https://developers.synopticdata.com/mesonet/v2/stations/timeseries/
 *** Write it so it just pulls from station metadata
+*** should be easy, may need to convert data to hash/array
 ** TODO Write correction algorithm
 *** There was one from another sensor company that was just linear. Find this and try it before writing your own.
 ** TODO Use org-babel (?) to apply correction to water levels with temps from synoptic.
